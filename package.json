@@ -1,0 +1,40 @@
+{
+  "name": "bridge-hardhat",
+  "version": "1.0.0",
+  "description": "The smart contracts for decentralized cross layer 2 bridge",
+  "private": true,
+  "scripts": {
+    "chain": "npx hardhat node",
+    "compile": "npx hardhat compile",
+    "deploy-localhost": "npx hardhat run scripts/deploy.ts --network localhost",
+    "deploy-mumbai": "npx hardhat run scripts/deploy.ts --network mumbai",
+    "test": "npx hardhat test",
+    "prettier": "prettier --write 'contracts/**/*.sol'"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.4",
+    "@nomiclabs/hardhat-etherscan": "^2.1.8",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@typechain/ethers-v5": "^7.2.0",
+    "@typechain/hardhat": "^2.3.1",
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^12.20.41",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.3",
+    "hardhat": "^2.8.2",
+    "hardhat-gas-reporter": "^1.0.7",
+    "prettier": "^2.5.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.13",
+    "solhint": "^3.3.6",
+    "solidity-coverage": "^0.7.17",
+    "ts-node": "^10.4.0",
+    "typechain": "^5.2.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.2"
+  }
+}
