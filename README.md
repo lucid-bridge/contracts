@@ -1,2 +1,2 @@
-# Smart contracts for Somerset bridge
+# Smart contracts for Lucid bridge
 
